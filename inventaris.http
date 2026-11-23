@@ -1,0 +1,23 @@
+### GET Semua Inventaris
+GET http://localhost:3000/api/inventaris
+
+### GET Detail Barang INV002
+GET http://localhost:3000/api/inventaris/INV002
+
+### POST Tambah Barang Baru
+POST http://localhost:3000/api/inventaris
+Content-Type: application/json
+
+{
+  "nama": "Monitor",
+  "kategori": "Komputer",
+  "jumlah": 5,
+  "kondisi": "Baik",
+  "lokasi": "Lab Komputer 2"
+}
+
+### GET Barang Baru INV005
+GET http://localhost:3000/api/inventaris/INV005
+
+### GET Barang Tidak Ditemukan
+GET http://localhost:3000/api/inventaris/INV999
